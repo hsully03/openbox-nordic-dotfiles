@@ -1,0 +1,33 @@
+#!/usr/bin/env sh
+
+status=$(~/.local/bin/eww windows | grep volume)
+
+show() {
+  killall -q sleep 2> /dev/null
+  if [[ ! $status =~ \* ]]; then
+    ~/.local/bin/eww open volume-indicator
+  fi
+  hide &
+}
+
+hide() {
+  sleep 1.5 && ~/.local/bin/eww close volume-indicator
+}
+
+show
+
+case $1 in
+  up)
+    pamixer -i 5
+    pamixer --get-volume >> /tmp/ewwpipe
+    ;;
+  down)
+    pamixer -d 5
+    pamixer --get-volume >> /tmp/ewwpipe
+    ;;
+  *)
+    pamixer --get-volume >> /tmp/ewwpipe
+    ;;
+esac
+
+show

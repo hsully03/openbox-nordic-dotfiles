@@ -1,0 +1,17 @@
+{
+	"password": "",
+	"ipAddress": "192.168.86.125",
+	"fallbackIpAddress": "192.168.86.125",
+	"port": 8180,
+	"ssl": false,
+	"subjectLine": false,
+	"transcode": true,
+	"systemSound": false,
+	"launchOnStartup": false,
+	"minimize": true,
+	"macstyle": false,
+	"acceleration": true,
+	"cacheMessages": false,
+	"notifSound": "wm-audio://receivedText.mp3",
+	"emojiSet": "Twitter"
+}

@@ -1,0 +1,6 @@
+2021/06/09-07:11:13.372 f9a Reusing MANIFEST /home/henry/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2021/06/09-07:11:13.374 f9a Recovering log #4
+2021/06/09-07:11:13.376 f9a Reusing old log /home/henry/.config/discord/Local Storage/leveldb/000004.log 
+2021/06/09-07:59:38.090 1a9c Level-0 table #8: started
+2021/06/09-07:59:38.095 1a9c Level-0 table #8: 20131 bytes OK
+2021/06/09-07:59:38.102 1a9c Delete type=0 #4

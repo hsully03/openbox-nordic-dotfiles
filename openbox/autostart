@@ -1,0 +1,31 @@
+## Restore Wallpaper
+nitrogen --restore
+
+## xfce4-settings daemon
+xfsettingsd &
+
+## polkit agent
+/usr/lib/xfce-polkit/xfce-polkit &
+
+## Start Compositing Manager
+exec compton &
+
+## Launch Polybar
+sh ~/.config/polybar/launch.sh
+
+## Launch Plank
+exec plank &
+
+## Start Music Player Daemon
+exec mpd &
+
+## Notification Daemon
+exec dunst &
+
+## Thunar Daemon
+exec thunar --daemon &
+
+## Launch WebMessage
+exec /bin/WebMessage-0.7.0.AppImage
+
+
